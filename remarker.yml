@@ -1,0 +1,64 @@
+port: 6275
+dest: build
+out: index.html
+source: slides.md
+title: ''
+assets: ['static', 'css', 'fonts', 'js']
+css: ''
+cssFiles: [
+    './css/quasar.min.css',
+    './css/pure-min.css',
+    './css/spaces.css',
+    './css/typo.css',
+    './css/devices.min.css',
+    './css/gh-fork-ribbon.css',
+    './css/nord-dark.css',
+    './css/nord-light.css',
+    './css/font-nord.css',
+    './css/bg-nord.css',
+    './css/font-open-color.css',
+    './css/bg-open-color.css',
+    './css/material-icons.css',
+    './css/abs-layout.css',
+    './css/border-layout.css',
+    './css/text-rect.css',
+    './css/text-circle.css',
+    './css/card.css',
+    './css/lines.css',
+    './css/filters.css',
+    './css/remixicon.css',
+    './css/style.css',
+    './css/custom.css'
+]
+script: ''
+scriptFiles: [
+    './js/vue.js',
+    './js/quasar.umd.min.js',
+    './js/mermaid.min.js',
+    './js/normalize.js'
+]
+remarkConfig: {
+  ratio: '4:3',
+  highlightStyle: 'monokai',
+  highlightLines: true,
+  highlightSpans: true,
+  highlightInlineCode: false,
+  highlightLanguage: '-',
+  slideNumberFormat: '%current% / %total%',
+  includePresenterNotes: true,
+  countIncrementalSlides: true,
+  navigation: {
+    scroll: true,
+    touch: true,
+    click: false
+  },
+  timer: {
+    startOnChange: true,
+    resetable: true,
+    enabled: true,
+  }
+}
+remarkPath: './js/remark.min.js'
+scriptFilesAfterCreate: ['./js/addon.js']
+livereload: true
+livereloadPort: 35729
